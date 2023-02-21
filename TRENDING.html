@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRENDING ANIME</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+
+	<script>
+		$(document).ready(function(){
+  		$('[data-toggle="popover"]').popover();      
+		});
+	</script>
+
+	<style type="text/css">
+		#plan:hover{
+			text-decoration: underline;
+			color:#ff471a; 
+		}
+		.trending{
+		height:320px;
+		width:500px;
+		background-color:blue;
+		border:2px solid black;
+		position:relative;
+		display:flex;
+		margin:auto;
+		border-radius:10px;
+		overflow:hidden;
+		cursor:pointer;
+		}
+		.text{
+		width:100%;
+		height:100%;
+		right:-100%;
+		padding:0 10px;
+		display:grid;
+		place-content:center;
+		position:absolute;
+		background-color:rgb(255,255,255,0.7);
+		transition:all .5s ease-in-out;
+		}
+		.trending:hover .text{
+		right:0%;
+		}
+	</style>
+</head>
+<body>
+
+	<header style="background:black">
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6" style="padding-left:150px;">
+					<img src="img/anime.png" class="img-fluid mx-auto" width="170" ><br>
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 75px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-warning" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- navigation -->
+	
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"  href="index.html" style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;"><a class="nav-link"  href="TRENDING.html" style="width: 160px; text-align: center;">TRENDING</a></li>
+					<li class="nav-item"><a class="nav-link"  href="CATEGORY.html" style="width: 160px; text-align: center;">CATEGORY</a></li>
+					<li class="nav-item"><a class="nav-link"  href="MOVIES.html" style="width: 130px; text-align: center;">MOVIES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="CONTACT.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	
+	
+	<section style="background:black">
+
+		<div class="container">
+			<div class="cont2" id="trending">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h1 style="text-align: center; color:white;text-shadow:2px 2px 5px blue;">◕TRENDING ANIME◕</h1>
+					</div>
+				</div><br>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+					<div class="trending">
+						<a href="TRENDING.html"><img id="zoom" src="img/onepiece.webp" class="img-thumbnail img-fluid mx-auto d-block" style="height:100%;width:100%"></a>
+						<div class="text">
+							<h2 style="text-align:center;">ONE PEICE</h2>
+							<p>Woonan is the legendary Great Gold Pirate, earning the nickname after accumulating about 1/3 of the gold available in the world. Even after his disappearance, the tales of his gold being stashed away in a remote island continue to persist, a juicy target that other pirates lust for.</p>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+					<div class="trending">
+						<a href="TRENDING.html"><img id="zoom" src="img/chainsaw man.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:100%;width:100%"></a>
+						<div class="text">
+							<h2 style="text-align:center;">CHAINSHAW  MAN</h2>
+							<p>Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion is his pet, the chainsaw devil Pochita, with whom he slays devils for money that inevitably ends up in the yakuza's pockets. All Denji can do is dream of a good, simple life: one with delicious food and a beautiful girlfriend by his side. But an act of greedy betrayal by the yakuza leads to Denji's brutal, untimely death</p>
+						</div>
+					</div>
+				</div>
+			</div><br><br>
+			
+			
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+					<div class="trending">
+						<a href="TRENDING.html"><img id="zoom" src="img/goku.png" class="img-thumbnail img-fluid mx-auto d-block" style="height:100%;width:100%"></a>
+						<div class="text">
+							<h2 style="text-align:center;">DRAGON BALL SUPER</h2>
+							<p>Seven years after the events of Dragon Ball Z, Earth is at peace, and its people live free from any dangers lurking in the universe. However, this peace is short-lived; a sleeping evil awakens in the dark reaches of the galaxy: Beerus, the ruthless God of Destruction. Disturbed by a prophecy that he will be defeated by a "Super Saiyan God," Beerus and his angelic attendant Whis start searching the universe for this mysterious being.</p>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+					<div class="trending">
+						<a href="TRENDING.html"><img id="zoom" src="img/demon slayer.webp" class="img-thumbnail img-fluid mx-auto d-block" style="height:100%;width:100%"></a>
+						<div class="text">
+							<h2 style="text-align:center;">DEMON SLAYER SEASON 3</h2>
+							<p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br>
+	</section>
+	
+			<!-- FOTTER -->
+		
+	<footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@2023 ANIME CHANNEL . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

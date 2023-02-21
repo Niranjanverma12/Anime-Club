@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CATEGORY TYPE</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+
+	<script>
+		$(document).ready(function(){
+  		$('[data-toggle="popover"]').popover();      
+		});
+	</script>
+
+	<style type="text/css">
+		#plan:hover{
+			text-decoration: underline;
+			color:#ff471a; 
+		}
+		.trending{
+		height:300px;
+		width:400px;
+		background-color:blue;
+		border:2px solid black;
+		position:relative;
+		display:flex;
+		margin:auto;
+		border-radius:10px;
+		overflow:hidden;
+		cursor:pointer;
+		}
+		.text{
+		width:100%;
+		height:100%;
+		right:-100%;
+		padding:0 10px;
+		display:grid;
+		place-content:center;
+		position:absolute;
+		background-color:rgb(255,255,255,0.7);
+		transition:all .5s ease-in-out;
+		}
+		.trending:hover .text{
+		right:0%;
+		}
+	</style>
+</head>
+<body>
+
+	<header style="background:black">
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6" style="padding-left:150px;">
+					<img src="img/anime.png" class="img-fluid mx-auto" width="170" ><br>
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 75px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-warning" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- navigation -->
+	
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"  href="index.html" style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="TRENDING.html" style="width: 160px; text-align: center;">TRENDING</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;"><a class="nav-link"  href="CATEGORY.html" style="width: 160px; text-align: center;">CATEGORY</a></li>
+					<li class="nav-item"><a class="nav-link"  href="MOVIES.html" style="width: 130px; text-align: center;">MOVIES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="CONTACT.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	
+				<!-- SECTION -->
+	
+	<section style="background:black">
+	<div class="container">
+		<div class="cont2" id="trending">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 style="color:white;text-shadow:2px 2px 5px red;">HORROR</h1>
+				</div>
+			</div><br>
+		</div>
+	</div>
+	
+	<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;border-radius:20px 16px;"><img id="zoom" src="img/rareblue.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px;"></a>
+					<div class="text">
+							<h2 style="text-align:center;">RAREBLUE</h2>
+							<p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders.</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/paranoia agent.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px;"></a>
+					<div class="text">
+							<h2 style="text-align:center;">PARANOIA AGENT </h2>
+							<p>The infamous Shounen Bat (Lil' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch much less understand.</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/spirited away.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px;"></a>
+					<div class="text">
+							<h2 style="text-align:center;">SPIRITED AWAY </h2>
+							<p>Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls.</p>
+					</div>
+				</div>
+				</div>
+	</div><br><br><br>
+	</section>
+	
+			<!-- SECTION 2 -->
+	
+	<section style="background:black">
+	<div class="container">
+		<div class="cont2" id="trending">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 style="color:white;text-shadow:2px 2px 5px red;">SPORTS</h1>
+				</div>
+			</div><br>
+		</div>
+	</div>
+	
+	<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/hajime.webp" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">HAJIME NO IPPO</h2>
+							<p>Makunouchi Ippo has been bullied his entire life. Constantly running errands and being beaten up by his classmates, Ippo has always dreamed of becoming the world champion.</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/haikyu.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">HAIKYU</h2>
+							<p>Inspired after watching a volleyball ace nicknamed "Little Giant" in action, small-statured Shouyou Hinata revives the volleyball club at his middle school. The newly-formed team even makes it to a tournament; however, their first match turns out to be their last when they are brutally squashed by the "King of the Court," Tobio Kageyama.</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/blue lock.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">BLUE LOCK</h2>
+							<p>After reflecting on the current state of Japanese soccer, the Japanese Football Association decides to hire the enigmatic and eccentric coach Jinpachi Ego to achieve their dream of winning the World Cup. Believing that Japan has lacked an egoistic striker hungry for goals, Jinpachi initiates the Blue Lock—a prison-like facility where three hundred talented strikers from high schools all over Japan are isolated and pitted against each other</p>
+					</div>
+				</div>
+				</div>
+	</div><br><br><br>
+	</section>
+	
+			<!-- SECTION 3 -->
+	
+	<section style="background:black">
+	<div class="container">
+		<div class="cont2" id="trending">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 style="color:white;text-shadow:2px 2px 5px red;">CARTOON</h1>
+				</div>
+			</div><br>
+		</div>
+	</div>
+	
+	<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/sonic.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">SONIC</h2>
+							<p>When Dr. Eggman (Robotnik in the US version) holds the president and his daughter hostage, Sonic must comply to the evil scientist's demand of going to Eggmanland to stop Black Eggman and deactivate the city's generator before it reaches critical mass.</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/doraemon.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px;"></a>
+					<div class="text">
+							<h2 style="text-align:center;">DORAEMON</h2>
+							<p>Doraemon the Movie 2021: Nobita's Space War (Little Star Wars), Doraemon Movie 41: Nobita no Little Star Wars, Doraemon the Movie 2021: Nobita's Space War, Doraemon the Movie 2021: Nobita no Uchuu Shou Sensou, 映画ドラえもん のび太の宇宙小戦争（リトルスターウォーズ） 2021</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/digimon.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">DIGIMON</h2>
+							<p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders.</p>
+					</div>
+				</div>
+				</div>
+	</div><br><br><br>
+	
+	<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1"><img id="zoom" src="img/ninja turtle.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">DIGIMON</h2>
+							<p>Digimon Fusion, Digimon Xros Wars: Toki wo Kakeru Shounen Hunter-tachi, Digimon Cross Wars, Digimon Xros Wars: Toki wo Kakeru Shounen Huntertachi, Digimon Xros Wars: The Hunting Boys Running Through Time, Digimon Xros Wars: The Young Hunters Who Leapt Through Time, デジモンクロスウォーズ 時を駆ける少年ハンターたち
+Digimon Xros Wars: Toki wo Kakeru Shounen Hunter-tachi takes place one year after the defeat of Bagramon and company. </p>
+					</div>
+				</div>
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/betblade burst.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">BEYBLADE BURST</h2>
+							<p>Valt Aoi is a hot-blooded kid who loves to attack and wields a Beyblade named Valkyrie. His close friend Shuu Kurenai is an elite Blader who is a genius but still puts in a lot of effort, and wields the Beyblade named Spriggan</p>
+					</div>
+				</div>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="trending">
+					<a href="WeightLoss.html#WeightLossSection1" style="color:  #77b300;"><img id="zoom" src="img/ben 10.jpg" class="img-thumbnail img-fluid mx-auto d-block" style="height:300px;width:400px"></a>
+					<div class="text">
+							<h2 style="text-align:center;">BEN 10</h2>
+							<p>Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders.</p>
+					</div>
+				</div>
+				</div>
+	</div><br><br>	
+	</section>
+	
+			<!-- FOTTER -->
+		
+	<footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@2023 ANIME CHANNEL . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+	
